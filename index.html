@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sport Center</title>
+  </head>
+  <body>
+    <h1>Welcome to the Sport Center!</h1>
+    <p>Our Sport Center offers a variety of activities and classes to keep you active and fit.</p>
+
+    <h2>Classes and activities</h2>
+    <ul>
+      <li>Gymnastics</li>
+      <li>Fencing</li>
+      <li>Swimming</li>
+      <li>Yoga</li>
+    </ul>
+
+    <h2>Special offers</h2>
+    <p>Sign up for a year and get 10% discount off yearly membership.</p>
+  </body>
+</html>
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+let specialOffer = 'Sign up for a year and get 10% discount off yearly membership.';
+
+let showSpecialOffer = () => {
+  alert(specialOffer);
+};
+
+document.getElementById('show-offer').addEventListener('click', showSpecialOffer);
